@@ -1,71 +1,78 @@
-<?php 
-
-include "Control/database.php";
-
-
-?>
-
 <html>
-
+<head>
+<link rel="stylesheet" type="text/css" href="view/css.css">
+</head>
 <body>
 
-<h1>Registration Form</h1>
-<form action="" method="POST" enctype="multipart/form-data">
-First Name: <input type="text" name="firstname" minlength="4"><br>
 
-Last Name: <input type="text" name="lasttname" minlength="4"><br>
+<div class="header">
+  <h1 ID="header1">ABC Management System</h1>
+  <h3 ID="header2">We Create Future</h3>
+</div>
+<div class="sticky">
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">About US</a>
+  <a href="#">Shop</a>
+</div>
+</div>
 
-E-mail:<input type="text" name="email"><br>
 
-Gender: <input type="radio" id="male" name="gender" value="Male">
-  <label for="gender">Male</label>
-  <input type="radio" id="female" name="gender" value="Female">
-  <label for="female">Female</label>
-  
+<div class="middlecolumn ">
+<h1 ID="regis">Registration form </h1>
+
+<hr>
+
+<form action="" method="post" enctype="multipart/form-data">
+<div class="registrationBox">
+<p class="abcd">    
+First name: <input type="text" name="fname"> </p>
+<br>
+<p class="abcd">
+Last Name: <input type="text" name="fname"> </p>
+<br>
+<p class="abcd">
+Age: <input type="text" name="fname"> </p>
+<br>
+<p class="abcd">Designation:
+  <input type="radio" id="male" name="gender" value="SP">
+  <label for="male">Junior Programmer</label><br>
+  <input type="radio" id="female" name="gender" value="SP">
+  <label for="female">Senior Programmer</label><br>
+  <input type="radio" id="other" name="gender" value="PL">
+  <label for="other">Project Lead</label> </p>
   <br>
-
-Mobile Number: <input type="INT" name="mobile"><br>
-
-<label for="dob">Date of Birth:</label>
-<input type="date" name="dob" required><br>
 <br>
-
-HSC Result: <input type="text" name="hscR"><br>
-
-SSC Result: <input type="text" name="sscR"><br>
-
-
-<label for="course">Select a Course you want to enroll:</label>
-<select name="course" id="course">
-<option value="CSE" selected>CSE</option>
-  <option value="BBA">BBA</option>
-  <option value="English">English</option>
-  <option value="eee">EEE</option>
-</select>
+<p class="abcd">
+Preferred Language 
 <br>
-
-
-<label for="year">Choose a year Enrolling year:</label>
-<select name="year" id="year">
-<option value="2021" selected>2021</option>
-  <option value="2022">2022</option>
-  <option value="2023">2023</option>
-</select>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+ JAVA<br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+PHP<br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+ C++<br>
+</p>
 <br>
-
-
-<label for="yearword">Choose a year enrolling year:</label>
-<select name="yearword" id="yearword">
-<option value="Summar" selected>Summar</option>
-  <option value="Fall">Fall</option>
-  <option value="Spring">Spring</option>
-</select>
 <br>
-
-<br><br><br>
-<input type="submit" value="Insert Data">
-
+<br>
+<p class="abcd">
+E-mail: <input type="text" name="email"> </p>
+<br>
+<br><p class="abcd">
+Password: <input type="password" name="email"> 
+</p><br>
+<br><p class="abcd">
+Please Choose a File
+<input type="file" name="filetoupload"></p>
+<br>
+<br>
+</div>
+<input type="submit" value="SUBMIT">
+<input type="reset" value="RESET">
+</form>
+ </div>
+  
+ 
 </body>
-
-
 </html>
